@@ -1,2 +1,2 @@
 console.log("Hello, world!");
-console.log("other-study test")
+console.log("other-study test");
