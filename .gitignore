@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Created by https://www.gitignore.io/api/java,linux,macos,gradle,windows,eclipse,java-web,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=java,linux,macos,gradle,windows,eclipse,java-web,visualstudiocode
@@ -203,3 +204,14 @@ gradle-app.setting
 # End of https://www.gitignore.io/api/java,linux,macos,gradle,windows,eclipse,java-web,visualstudiocode
 # Ignore Gradle build output directory
 build
+=======
+<<<<<<< HEAD
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+=======
+*.exe
+>>>>>>> 54eb9f3509883832725e94126939549efb930d2b
+>>>>>>> ba02818a8914b80c58c8614d36e998c7242c386d

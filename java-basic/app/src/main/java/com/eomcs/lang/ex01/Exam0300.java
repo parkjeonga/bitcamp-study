@@ -24,4 +24,8 @@ class Exam0300 {
 //- 예) $ javac -d bin/main -encoding UTF-8 src/main/java/com/eomcs/basic/ex01/Exam3.java
 //
 //2) 실행하기
+<<<<<<< HEAD
 //- $ java -cp bin/main com.eomcs.basic.ex01.Exam3
+=======
+//- $ java -cp bin/main com.eomcs.lang.ex01.Exam3
+>>>>>>> ba02818a8914b80c58c8614d36e998c7242c386d
