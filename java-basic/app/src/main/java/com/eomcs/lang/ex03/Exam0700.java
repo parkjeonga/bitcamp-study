@@ -30,3 +30,17 @@ public class Exam0700 {
   }
 }
 
+/*
+Hello,world!
+Hello,
+world!
+abclo,
+Helworld!
+Hello,  world!
+Hello,world!
+Hello,"w"orld!
+Hello,'w'orld!
+'
+"
+c:\Users\user\git
+결과값*/

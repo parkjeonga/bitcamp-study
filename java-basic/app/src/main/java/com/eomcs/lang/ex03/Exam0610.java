@@ -17,3 +17,7 @@ public class Exam0610 {
   }
 }
 
+/* 
+ABC가나다
+ABC가나다
+결과값*/

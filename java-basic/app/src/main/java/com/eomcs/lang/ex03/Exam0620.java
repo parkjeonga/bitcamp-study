@@ -32,4 +32,11 @@ public class Exam0620 {
     System.out.println("키:" + 170.5f);
   }
 }
+/*
+Hello,world!
+나이:20
+false<== 재직자 여부
+성별:여
+키:170.5
+결과값 */
 

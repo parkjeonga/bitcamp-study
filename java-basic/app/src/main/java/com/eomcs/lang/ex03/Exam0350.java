@@ -11,6 +11,13 @@ public class Exam0350 {
   }
 }
 
+
+/* 
+12.375
+-12.375
+12.375
+결과값*/
+
 //## 실습
 //1) 컴파일하기
 //- $ javac -d bin/main -encoding UTF-8 src/main/java/com/ohoracs/basic/ex03/Exam35.java
