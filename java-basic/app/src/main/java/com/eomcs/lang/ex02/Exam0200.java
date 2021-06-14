@@ -39,7 +39,8 @@ public class Exam0200 {
 //       -d [생성된 파일을 놓아둘 디렉토리] 
 //       -sourcepath [자바 소스 경로] [자바 패키지]
 //예) $ javadoc -encoding UTF-8 -charset UTF-8 -d javadoc -sourcepath app/src/main/java com.eomcs.lang.ex02
-//
+//   java까지가 소스코드고 com부터는 패키지
+//   어떤 패키지를 확인할 것인가?
 //2) Javadoc으로 생성한 HTML 문서 확인하기
 //- /javadoc 디렉토리를 보면 자바 소스 파일에서 추출한 Javadoc 으로 만든 HTML 문서를 확인할 수 있다.
 // 
