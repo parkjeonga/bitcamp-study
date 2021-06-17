@@ -24,7 +24,7 @@ public class Exam0630 {
     //    => i = 8 이 되었다.
     // 3) 할당 연산자 실행
     //    => j <=== 7 실행
-// 할당연산자는 맨마지막에 실행 위에값에서 i=8 j=7  > j 값에 7을 저장한후 i값을 1 더해준다!
+
     System.out.println(j);
     System.out.println(i);
   }

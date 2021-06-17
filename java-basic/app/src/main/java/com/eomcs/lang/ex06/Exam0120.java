@@ -16,7 +16,7 @@ public class Exam0120 {
       System.out.println("군대 가야한다.");
       System.out.println("일해야 한다.");
       System.out.println("세금 납부해야 한다.");
-//  맨위 한문장만 조건 그담 3줄은 참, 거짓 상관없이 무조건 실행됨. 중가로가 없으므로~
+
     System.out.println("------------------------------");
 
     // 여러 문장을 if 문에 종속시키고 싶으면, 블록을 사용하라!
