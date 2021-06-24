@@ -2,11 +2,38 @@ package com.eomcs;
 
 import java.util.Date;
 import java.util.Scanner;
-import com.eomcs.App.Board;
 
-public class BoardHandler {
+public class BoardHandler implements Handler {
+
+  static class Board {
+    String title;
+    String content;
+    String password;
+    int viewCount;
+    Date createdDate;
+  }
 
   static Scanner keyScan;
+
+  public void execute() {
+    loop: while (true) {
+      System.out.print("게시글 관리> ");
+      String command = keyScan.nextLine();
+
+      switch (command) {
+        case "list": list(); break;
+        case "add": add(); break;
+        case "update": update(); break;
+        case "delete": delete(); break;
+        case "view": view(); break;
+        case "back":
+          break loop;
+        default:
+          System.out.println("지원하지 않는 명령입니다.");
+      }
+      System.out.println();
+    }
+  }
 
   static void list() {
     System.out.println("[게시글 목록]");
@@ -31,9 +58,8 @@ public class BoardHandler {
       return;
     }
 
-  
-    Board board = new Board(); 
 
+    Board board = new Board();
     System.out.print("제목: ");
     board.title = keyScan.nextLine();
 
@@ -44,7 +70,6 @@ public class BoardHandler {
     board.password = keyScan.nextLine();
 
     board.createdDate = new Date(); 
-    
     ArrayList.append(board);
 
     System.out.println("게시글을 등록했습니다.");
@@ -71,7 +96,7 @@ public class BoardHandler {
 
     System.out.print("정말 변경하시겠습니까?(y/N) ");
     if (!keyScan.nextLine().equals("y")) {
-      System.out.println("게시글 변경을 최소하였습니다.");
+      System.out.println("게시글 변경을 취소하였습니다.");
       return;
     } 
 
@@ -94,7 +119,7 @@ public class BoardHandler {
 
     System.out.print("정말 삭제하시겠습니까?(y/N) ");
     if (!keyScan.nextLine().equals("y")) {
-      System.out.println("게시글 삭제를 최소하였습니다.");
+      System.out.println("게시글 삭제를 취소하였습니다.");
       return;
     } 
 
@@ -124,3 +149,14 @@ public class BoardHandler {
     System.out.printf("등록일: %1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS\n", board.createdDate);
   }
 }
+
+
+
+
+
+
+
+
+
+
+

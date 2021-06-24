@@ -1,39 +1,31 @@
 package com.eomcs;
 
-class A {}
-class B {}
-class C {}
-
 public class Test {
+  static class X {
+    int a;
+  }
+
+  static class Y {
+    int b;
+  }
+
   public static void main(String[] args) {
-    A r1;
-    B r2;
-    C r3;
+    X obj1 = new X();
+    Y obj2 = new Y();
 
-    r1 = new A();
-    //    r1 = new B();
-    //    r1 = new C();
+    //X obj3 = new Y();
+    //Y obj4 = new X();
 
-    //    r2 = new A();
-    r2 = new B();
-    //    r2 = new C();
+    Object obj5;
+    //obj5 = new X();
+    obj5 = new Y();
 
-    //    r3 = new A();
-    //    r3 = new B();
-    r3 = new C();
+    Y obj6 = (Y) obj5;
 
+    obj6.b = 100;
 
-    Object obj;
-
-    obj = new A();
-    obj = new B();
-    obj = new C();
+    System.out.println(obj6.b);
 
   }
+
 }
-
-
-
-
-
-
