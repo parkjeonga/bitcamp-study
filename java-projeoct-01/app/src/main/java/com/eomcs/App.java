@@ -8,7 +8,7 @@ public class App {
 
   public static void main(String[] args) {
 
-    
+
     BoardHandler boardHandler = new BoardHandler("게시판1", keyScan);
     BoardHandler boardHandler2 = new BoardHandler("게시판2", keyScan);
     MemberHandler memberHandler = new MemberHandler(keyScan);

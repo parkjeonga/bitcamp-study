@@ -3,7 +3,6 @@ package com.eomcs;
 class Calculator3 {
   int result;
 
-
  
   void plus(int value) {
     this.result += value;
@@ -14,7 +13,6 @@ public class Test3 {
   public static void main(String[] args) {
     Calculator3 obj1 = new Calculator3();
     Calculator3 obj2 = new Calculator3();
-
 
     obj1.plus(100);
     obj1.plus(200);

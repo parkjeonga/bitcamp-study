@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class BoardHandler implements Handler {
 
-
   static class Board {
     String title;
     String content;
@@ -13,7 +12,6 @@ public class BoardHandler implements Handler {
     int viewCount;
     Date createdDate;
   }
-
 
   String boardName;
   Scanner keyScan;
@@ -67,7 +65,7 @@ public class BoardHandler implements Handler {
       return;
     }
 
-    
+
     Board board = new Board(); 
 
     System.out.print("제목: ");

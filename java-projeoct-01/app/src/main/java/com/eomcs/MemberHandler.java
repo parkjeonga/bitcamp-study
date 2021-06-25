@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class MemberHandler implements Handler {
 
+
   static class Member {
     String name;
     String email;
@@ -55,7 +56,6 @@ public class MemberHandler implements Handler {
       System.out.println("더이상 회원을 추가할 수 없습니다.");
       return;
     }
-
 
     Member member = new Member(); 
 

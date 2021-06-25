@@ -2,9 +2,9 @@ package com.eomcs;
 
 public class ArrayList {
 
-    static final int MAX_LENGTH = 100;
 
-  
+  static final int MAX_LENGTH = 100;
+
   Object[] list = new Object[MAX_LENGTH];
   int size = 0;
 
