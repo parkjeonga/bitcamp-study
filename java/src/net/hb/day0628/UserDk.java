@@ -13,5 +13,5 @@ public class UserDk {
     String msg = dunkin.coffee();
     System.out.println("주문한 음료는 " + msg + "입니다.");
 
-  }//end
-}//class ENd
+  }
+}
