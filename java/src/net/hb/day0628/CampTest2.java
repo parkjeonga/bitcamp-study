@@ -2,7 +2,7 @@ package net.hb.day0628;
 import java.util.Scanner;
 
 public class CampTest2 {
-  static Scanner sc=new Scanner(System.in);
+  static Scanner sc = new Scanner(System.in);
   static boolean[] camp = new boolean[5];
   static int sel=9, num=0;
 
