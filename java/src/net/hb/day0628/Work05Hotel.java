@@ -1,6 +1,7 @@
 package net.hb.day0628;
 
 import java.util.Scanner;
+import net.common.bit.Dunkin;
 
 public class Work05Hotel {   
 
@@ -8,36 +9,105 @@ public class Work05Hotel {
   private int room ;  //호=열 5호  3층*5열=15방구성
   private String[][] name = new String[3][5];
   private String title;
-
+  static Scanner sc = new Scanner(System.in);
   public Work05Hotel(){ }
   public Work05Hotel(String name){ }
   public Work05Hotel(String name, int year){ }
 
 
   public void process() {
+        
     //map()호출
     map();
+    
 
-    Scanner sc = new Scanner(System.in);
     int sel = 9;
-    while(true) {
-      System.out.print("\n1.투숙  2.퇴실  3.map  4.list 9.종료 >>>");
-      sel = Integer.parseInt(sc.nextLine());
-      if(sel==9) { 
-        System.out.println("호텔예약프로그램 종료합니다");
-        System.exit(1);
-      }
-      switch(sel) {
 
-      }//switch end
-    }//while end
+      System.out.print("\n1.투숙  2.퇴실  3.map  4.list 9.종료 >>>");
+       sel = sc.nextInt();
+    
+       switch(sel) {
+         case 1:
+            checkIn();
+           break;
+         case 2:
+           checkOut();
+           break;
+         case 3:
+           map();
+           break;
+         case 4:
+           list();
+           break;
+         case 9:
+           System.out.println("호텔예약프로그램 종료합니다");
+           System.exit(1);
+           break;
+         default:
+           System.out.println("번호가 옳지 않습니다.");
+        
+       }//switch end
+       
+       
+       
+       
+
+      
+      
   }//end
 
   public void checkIn() {
 
+      System.out.print("몇층에 투숙? ");
+      floor = sc.nextInt();
+      System.out.print("몇호에 투숙? ");
+      room = sc.nextInt();
+      
+      sc.nextLine();
+      
+ 
+          if( name[floor-1][room-1] == null){ 
+            System.out.print("투숙객 이름? ");
+            name[floor-1][room-1]= sc.nextLine();
+            System.out.println(" # 성공적으로 checkIn 되었습니다.");
+            
+            }  else {
+              System.out.println("#이미 예약된 방입니다"); 
+              } 
+
+
+       
+          process();
+      
   }//end
 
   public void checkOut() {
+
+ 
+
+    System.out.print("몇층에 퇴실? ");
+    floor = sc.nextInt();
+    System.out.print("몇호에 퇴실? ");
+    room = sc.nextInt();
+    sc.nextLine();
+    System.out.print("투숙객 이름? ");
+    name[floor-1][room-1]= sc.nextLine();
+     
+          if( name[floor-1][room-1] != null){ 
+
+            System.out.println(" # 성공적으로 checkOut 되었습니다.");
+            name[floor-1][room-1] = null ;
+            
+            
+            }  else {
+              System.out.println("#빈방입니다"); 
+              } 
+
+
+    process();
+   
+
+    
 
   }//end
 
@@ -67,6 +137,7 @@ public class Work05Hotel {
 
   public static void main(String[] args) {
     System.out.println("7월1일 목요일  4시19분");
+            
     Work05Hotel wh = new Work05Hotel();
     wh.process();
   }//end
