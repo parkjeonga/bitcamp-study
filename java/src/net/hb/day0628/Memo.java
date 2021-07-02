@@ -28,7 +28,12 @@ public class Memo extends Frame implements WindowListener,ActionListener {
     this.add("Center", ta);
     this.add("South", pan); //pan=Panel판넬 
 
+
+
+
     //이벤트연결 리스너추가
+    // WindowListener wi  = new WindowListerner();
+
     this.addWindowListener(this); //앞this  뒤this
     tf.addActionListener(this);
     btnSend.addActionListener(this);
@@ -73,10 +78,13 @@ public class Memo extends Frame implements WindowListener,ActionListener {
   public void  myExit( ) {
     System.out.println("초간단 메모장 프로그램을 종료 1:16 2:38");
     System.exit(0);
+    // WindowListener wi  = new WindowListerner();
   }//end
 
   public static void main(String[] args) {
     Memo pad = new Memo();  //생성자호출
+
+    // WindowListener wi  = new WindowListerner();
   }//end
 
 }//class END
