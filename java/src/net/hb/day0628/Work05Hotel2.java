@@ -1,8 +1,8 @@
-package bum.lang.test;
+package net.hb.day0628;
 
 import java.util.Scanner;
 
-public class testdfdf {
+public class Work05Hotel2 {
 
   //생성자 클래스 이름, 리턴값 X, void 기술 X
   //생성자 사용은 new키워드 다음에 기술 ob = new 클래스()
@@ -15,9 +15,9 @@ public class testdfdf {
   private String title;
   public Scanner sc = new Scanner(System.in);
 
-  public testdfdf() { }
-  public testdfdf(String name) { }
-  public testdfdf(String name, int year) { }
+  public Work05Hotel2() { }
+  public Work05Hotel2(String name) { }
+  public Work05Hotel2(String name, int year) { }
 
   public void process() {
     int sel = 9;
@@ -260,7 +260,7 @@ public class testdfdf {
 
   public static void main(String[] args) {
 
-    testdfdf wh = new testdfdf();
+    Work05Hotel2 wh = new Work05Hotel2();
     wh.process();
   }
 }
