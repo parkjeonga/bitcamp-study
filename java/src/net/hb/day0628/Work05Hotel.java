@@ -23,18 +23,10 @@ public class Work05Hotel {
     sel = sc.nextInt();
 
     switch(sel) {
-      case 1:
-        checkIn();
-        break;
-      case 2:
-        checkOut();
-        break;
-      case 3:
-        map();
-        break;
-      case 4:
-        list();
-        break;
+      case 1: checkIn(); break;
+      case 2: checkOut(); break;
+      case 3: map(); break;
+      case 4: list(); break;
       case 9:
         System.out.println("호텔예약프로그램 종료합니다");
         System.exit(1);
