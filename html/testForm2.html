@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>[testForm.hteml]</title>
+<style> *{font-size: 14pt; }
+        a { font-size: 26pt; text-decoration: none;   color: blue;     }
+        a:hover { font-size: 32pt; text-decoration: none;  color: green; font-family: 'comic sans ms';   }
+</style>
+
+<script>
+    function nullCheck(){  //void 사용 x, return 사용안해도 void 안씀
+       a = document.myform.code.value;  //document 는 생략 가능합니다
+       size = document.myform.code.value.length;  //자바에서 문자열 길이는 ~.length() 여기선 가로하면안되욥
+      // alert('문자열 길이 = '+ size)
+       if( a == "" || a == null  ) { alert("코드데이터를 입력하셔야 합니다 (필수항목) 11:36");
+       myform.code.focus(); 
+       return; // 아래 문장을 처리 안하고 함수 탈출
+         }
+       else{myform.title.focus()}
+       if ( size != 6 ){alert("코드는 6자리로 입력해주세요");  myform.code.value =""; myform.code.focus(); return false;}
+
+       b = document.myform.title.value;
+       if(  b == "" || b ==null ) { alert("제목데이터를 입력하셔야 합니다 (필수항목) 11:51");
+       myform.title.focus();
+         }
+       else{}
+    }
+</script>
+</head>
+<body>
+
+<font  color = "blue"><b>화면 만들기 testForm.html</b></font><br>
+<form name="myform"><!--폼이랑 프롬 헷갈리지 말기!, name 설정 까먹지 말기-->
+🎄코드 : <input type="text" name="code" size="10"><br>
+🎄제목 : <input type="text" name="title" size="10" value = "summer"><br>
+    <input type="button" value="저 장" onclick="nullCheck()">
+    <input type="reset" value="취 소">
+</form>
+
+<hr color="red" size="5">
+<div style="width: 800px;"
+  <form name="bitform">
+    <fieldset>
+      <legend>testForm3.html</legend>
+      <div class="input_group">
+         <label for= "">이름 : </label>
+         <input type="text" name="user_name" id="">
+      </div>
+      <div class="input_group">
+        <label for="">비번 : </label>
+        <input type="password" name = "user_pwd" id ="">   
+      </div> 
+      <div class="input_group">
+        <label for="">성별 : </label>
+        <input type="radio" name = "gender" value ="M">남자
+        <input type="radio" name = "gender" value ="W">여자
+      </div>
+      <div class="input_group">
+        <label for="">직업 : </label>
+        <select name ="job" id = "">
+          <option value="" > --선택하세요--</option>
+          <option value="coder" > 개발자</option>
+          <option value="dessigner">디자이너</option>
+          <option value="dba">DBA</option>
+       </div>
+       <div class="input_group">
+        <label for="">직업 : </label>
+        <select name ="job" id = "">
+          <option value="" > --선택하세요--</option>
+          <option value="coder" > 개발자</option>
+          <option value="dessigner">디자이너</option>
+          <option value="dba">DBA</option>
+       </div>
+     
+        
+
+
+
+
+    </fieldset>
+  </form>
+
+</body>
+</html>

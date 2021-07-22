@@ -28,9 +28,6 @@ public class Memo extends Frame implements WindowListener,ActionListener {
     this.add("Center", ta);
     this.add("South", pan); //pan=Panel판넬 
 
-
-
-
     //이벤트연결 리스너추가
     // WindowListener wi  = new WindowListerner();
 
@@ -42,7 +39,7 @@ public class Memo extends Frame implements WindowListener,ActionListener {
     //프레임의 메소드값변경 
     ta.setBackground(Color.YELLOW);
     this.setSize(450, 500);
-    this.setTitle("초간단메모장");
+    this.setTitle("영어단어");
     this.setVisible(true);
   }//end
 
@@ -76,7 +73,7 @@ public class Memo extends Frame implements WindowListener,ActionListener {
   }//end
 
   public void  myExit( ) {
-    System.out.println("초간단 메모장 프로그램을 종료 1:16 2:38");
+    System.out.println("영어 단어 프로그램을 종료합니다");
     System.exit(0);
     // WindowListener wi  = new WindowListerner();
   }//end
